@@ -1,0 +1,94 @@
+*{
+    max-width: 100%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.navContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 100%;
+    padding: 10px 5%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    position: relative;
+    z-index: 1;
+
+}
+.menuIcon{
+    display: none;
+}
+.logoContainer{
+    width: 250px;
+}
+.logoContainer img{
+    width: 100%;
+}
+
+.authContainer a{
+    margin-left: 15px;
+}
+.button{
+    color: #000000;
+    padding: 10px;
+}
+.register{
+    color: #ffffff;
+
+    padding: 15px;
+    background-color: #000000;
+
+}
+
+@media screen and (max-width:960px) {
+    .menuIcon{
+        display: block;
+        font-size: 1.7rem;
+      
+    }
+    .authContainer{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        opacity: 1;
+        top: 100%;
+        right: 1%;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        align-items: center;
+        padding: 10px;
+        z-index: 700;
+        background-color: #fff;
+
+    }
+    .authContainer a:nth-child(1){
+        margin-top: 5px;
+    }
+    .authContainer a:nth-child(3){
+        margin-bottom: 5px;
+    }
+    .authContainer a{
+        color: #000000;
+        margin-top: 20px;
+
+        margin-left: 0;
+        padding: 20px;
+
+    }
+    .authContainer .register{
+        color: #fff;
+
+        max-width: 100%;
+        width: 100%;
+    }
+    .active{
+        display: flex!important;
+    }
+
+   
+}
